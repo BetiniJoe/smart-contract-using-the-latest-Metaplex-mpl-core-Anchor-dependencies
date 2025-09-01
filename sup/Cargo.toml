@@ -1,0 +1,31 @@
+//Now that the program has been generated, let's enhance it to integrate with Metaplex mpl-core.
+I'll update the necessary files to include the latest mpl-core dependencies and implement the required functionality.
+First, let's update the Cargo.toml file to include the latest mpl-core dependencies:
+
+
+[package]
+name = "metaplex_nft_program"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "metaplex_nft_program"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.31.1"
+anchor-spl = "0.31.1"
+solana-program = "1.18.1"
+mpl-core = "0.3.0"
+mpl-token-metadata = { version = "4.0.0", features = ["no-entrypoint"] }
+
+[dev-dependencies]
+solana-sdk = "1.18.1"

@@ -1,0 +1,35 @@
+{
+  "name": "metaplex-nft-program",
+  "version": "0.1.0",
+  "description": "Solana NFT program using Anchor and Metaplex mpl-core",
+  "main": "index.js",
+  "scripts": {
+    "test": "anchor test",
+    "build": "anchor build",
+    "deploy": "anchor deploy"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "metaplex",
+    "nft"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@metaplex-foundation/mpl-core": "^0.3.0",
+    "@metaplex-foundation/mpl-token-metadata": "^3.1.0",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.87.6"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.1",
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.2.2"
+  }
+}
